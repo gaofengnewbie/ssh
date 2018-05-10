@@ -36,6 +36,7 @@ public class ItemController {
 	@ResponseBody
 	public EasyUIDataGridResult getItemList(Integer page,Integer rows){
 		EasyUIDataGridResult result = itemService.getItemList(page, rows);
+		System.out.priintln(result);
 		return result;
 	}
 
